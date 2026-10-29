@@ -1,1 +1,15 @@
-<p>login-component works!</p>
+<h1>Log In</h1>
+
+<form #formlogin="ngForm" (ngSubmit)="logInEmpleado()">
+  <label>User name: </label>
+
+  <input type="text" name="cajauser" #cajauser  class="form-control" />
+
+  <label>Password: </label>
+
+  <input type="password" name="cajapassword" #cajapassword class="form-control" />
+
+<button class="btn btn-warning" type="submit">Log In</button>
+</form>
+
+<p role="status">{{ mensaje }}</p>
