@@ -17,6 +17,6 @@ export class MenuComponent {
   public contador = this._serviceSignal.contador;
 
   logOutEmpleado(): void {
-    sessionStorage.removeItem("TOKEN");
+    this._serviceAuth.logOutEmpleado();
   }
 }
