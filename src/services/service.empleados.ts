@@ -11,12 +11,12 @@ interface LoginResponse {
 
 @Injectable()
 export class ServiceEmpleados {
-    logInEmpleadoObservable(login: Login) {
-      throw new Error('Method not implemented.');
-    }
-    url = environment.apiEmpleados;
-    constructor(
-        private _http: HttpClient) { }
+    //logInEmpleadoObservable(login: Login) {
+      //throw new Error('Method not implemented.');
+    //}
+    //url = environment.apiEmpleados;
+    //constructor(
+      //  private _http: HttpClient) { }
 
     async logIntEmpleados(user: unknown): Promise<LoginResponse> {
         let request = "auth/login";
