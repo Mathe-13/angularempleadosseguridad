@@ -36,15 +36,15 @@ export class LoginComponent implements OnInit {
     this._cdr.detectChanges();
   }
 
-  async logInEmpleadoObservable(): Promise<void> {
-    let userName = this.cajaUser.nativeElement.value;
-    let password = this.cajaPassword.nativeElement.value;
-    let login = new Login(userName, password);
-    let response = await this._service.logIntEmpleados(login);
-    this.mensaje = "Ya estas dentro, a jugar";
-    await this._serviceAuth.logEmpleadoAsync(response.response);
-    this._cdr.detectChanges();
-  }
+  //async logInEmpleadoObservable(): Promise<void> {
+   // let userName = this.cajaUser.nativeElement.value;
+   // let password = this.cajaPassword.nativeElement.value;
+   // let login = new Login(userName, password);
+    //let response = await this._service.logIntEmpleados(login);
+    //this.mensaje = "Ya estas dentro, a jugar";
+    //await this._serviceAuth.logEmpleadoAsync(response.response);
+    //this._cdr.detectChanges();
+  //}
 
   ngOnInit(): void {
     
